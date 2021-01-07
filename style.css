@@ -1,0 +1,33 @@
+body {
+    background-color: #eff3e2;
+}
+
+.container {
+    width: 90%;
+    color: #615e72;
+    border-style: solid;
+    margin: 0 auto;
+}
+
+header {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+main {
+    width: 90%;
+    border-style: solid;
+    border-color: #777777;
+    border-width: 1px;
+    padding-top: 5%;
+    color: #959595;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+footer {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10%;
+}
