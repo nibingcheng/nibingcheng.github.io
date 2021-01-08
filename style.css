@@ -5,23 +5,24 @@ body {
 .container {
     width: 90%;
     color: #615e72;
-    border-style: solid;
+    /* border-style: solid; */
     margin: 0 auto;
 }
 
-header {
+h1 {
     width: 90%;
     margin: 0 auto;
-    padding-top: 10%;
+    padding: 10% 0 3% 0;
     text-align: center;
     font-size: 3em;
     font-style: oblique;
     color: #808080;
 }
 
-#bingcheng {
-    display: flex; 
-    float: right;    
+header {
+    display: flex;
+}
+#bingcheng {    
     width: 180px;
     border-radius: 50%;
     padding: 3px;
@@ -32,9 +33,9 @@ header {
 
 main {
     width: 90%;
-    border-style: solid;
-    border-color: #777777;
-    border-width: 1px;
+    /* border-style: solid; */
+    /* border-color: #777777; */
+    /* border-width: 1px; */
     padding-top: 5%;
     color: #959595;
     font-size: 20px;
@@ -42,11 +43,14 @@ main {
     margin: 0 auto;
 }
 
-nav {
-    font-size: 1.3em;
+#nav {
+    color: black;
+    font-size: 1.5em;
+    font-family: fantasy;
 }
 .summary {
     font-size: large ;
+    font-family: 'Courier New', Courier, monospace;
 }
 #resume {
     text-decoration: none;
@@ -56,16 +60,20 @@ nav {
 h2 {
     margin: 150px 0 10px 0;
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #highlight {
     margin: 10px 0 150px 0;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .picture {
   /*  width: 380px; */
     height: 215px;
 }
-
+h3 {
+    margin: 0;
+}
 section {
     display: grid;
     width: 100%;
@@ -76,6 +84,7 @@ section {
 
     grid-template-columns: 50% 50%;
     grid-template-rows: 350px 350px 350px;
+    align-items: center;
   }
   
   section > .massif {
@@ -132,10 +141,20 @@ section {
         padding-left: 20px;
     }
 
+    .prod {
+        font-size: medium;
+        font-family: 'Times New Roman', Times, serif;
+    }
     .illinois {
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-top: 100px;
+        position: relative; 
+    }
+    #grainger {
+        position: absolute;  
+        color:orange; 
     }
   
 footer {
@@ -153,4 +172,32 @@ footer {
 
 .icon {
     height: 45px;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: powderblue;
+        /* display: block; */
+    }
+    header {
+        font-size: 2.5em;
+    }
+    nav {
+        font-size: 1em;
+    }
+    #bingcheng nav .summary {
+        display: block;
+    }
+    section {
+        /* display: grid; */
+        /* width: 100%; */
+        /* height: auto; */
+        grid-template-areas: "d2 d1"
+                             "a1  a2"
+                             "c2  c1";
+    
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 350px 350px 350px;
+        align-items: center;
+      }
 }

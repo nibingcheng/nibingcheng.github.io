@@ -4,31 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
   <title>Portfolio pages</title>
 </head>
 
 <body>
   <div class="container">
 
-    <header>
+    <h1>
       Bingcheng Ni  
-    </header>
+    </h1>
     
-
     <main>
-    
-      <img id="bingcheng" src="https://i.imgur.com/9Lck9Wl.png">
-      <nav>
-        About Me | <a id="resume" href="#">Résumé </a>
-      </nav>
-      <p class="summary">      
-        A staff engineer at Deere with over twenty years of experience in agricultural machinery industry. Currently in career transition to become a software engineer. I am taking the General Assembly's Software Engineering Immersive (SEI) course right now.
-      </p>
-      
+      <header>
+        <p class="summary">
+          <span id="nav">About Me | <a id="resume" href="index2.html">Résumé </a><br></span>               
+          A staff engineer at Deere with over twenty years of experience in farm equipment industry. Currently in career transition to become a software developer. I am taking the General Assembly's Software Engineering Immersive (SEI) course right now.
+        </p>
+        <img id="bingcheng" src="https://i.imgur.com/9Lck9Wl.png">  
+      </header>  
       
       <h2>Career Trajectory</h2>
       <p id="highlight">
-        Highlighting selected products and research that I had worked on.
+        Selected products and research that I had involvement over the years.
       </p>
 
       <section>
@@ -37,7 +35,7 @@
         </div>
         <div class="deere">
           <h3>High-Capacity Nutrient Applicator</h3>
-          <p>
+          <p class="prod">
             This nutrient applicator comes with a high-capacity dry box. it combines precision, power, and comfort while reducing your downtime and increasing your productivity.  
           </p>
         </div>
@@ -47,7 +45,7 @@
 
         <div class="agco">
           <h3>IDEAL combine</h3>
-          <p>
+          <p class="prod">
             First “clean-sheet” design of an axial combine in the industry in 30 years. This machine ensures maximum efficiency, superior grain and straw quality, and revolutionary sensor technology for on-the-fly harvesting adjustments.
           </p>
         </div>
@@ -58,15 +56,18 @@
 
         <div class="cnh">
           <h3>AccuGuide</h3>
-          <p>
-            By minimizing skips and overlaps, you will save on seed, fertilizer and chemicals, and even improve agronomic performance by precisely placing seeds. In controlled-traffic scenarios, you can minimise overall field compaction and further improve agronomic performance. 
+          <p class="prod">
+            By minimizing skips and overlaps, you will save on seed, fertilizer and chemicals, and even improve agronomic performance. You can minimize overall field compaction and further improve agronomic performance. 
           </p>
         </div>
       </section>
 
       <div class="illinois">
-      <img id="uiuc" src="https://publish.illinois.edu/engineering-education-research/files/2014/03/cropped-Bardeen-Quad2.jpg">
-      <p>Alma mater</p>
+        <a href="https://illinois.edu">
+          <img id="uiuc" src="https://publish.illinois.edu/engineering-education-research/files/2014/03/cropped-Bardeen-Quad2.jpg">
+        </a>
+        <a id="grainger" href="https://grainger.illinois.edu"><p>Alma mater</p></a>
+        
       </div>
 
     </main>
@@ -75,8 +76,12 @@
 
     <footer>
       <div class="github">
-        <img class="icon" src="img/github-icon-18.jpg"> 
-        <p>https://github.com/nibingcheng</p>
+        <a href="https://github.com/nibingcheng">
+          <img class="icon" src="img/github-icon-18.jpg"> 
+        </a>
+        <a href="https://github.com/nibingcheng">
+          <p>https://github.com/nibingcheng</p>
+        </a>
       </div>
 
       <div class="email">
@@ -90,8 +95,12 @@
       </div>
 
       <div class="linkedin">
-        <img class="icon" src="img/linkedin-icon-for-resume-11.jpg"> 
-        <p>www.linkedin.com/in/bingcheng-ni-28885962</p>
+        <a href="https://www.linkedin.com/in/bingcheng-ni-28885962"> 
+          <img class="icon" src="img/linkedin-icon-for-resume-11.jpg">
+        </a> 
+        <a href="https://www.linkedin.com/in/bingcheng-ni-28885962">
+          <p>www.linkedin.com/in/bingcheng-ni-28885962</p>
+        </a>
       </div>
     </footer>
     
