@@ -13,7 +13,23 @@ header {
     width: 90%;
     margin: 0 auto;
     padding-top: 10%;
+    text-align: center;
+    font-size: 3em;
+    font-style: oblique;
+    color: #808080;
 }
+
+#bingcheng {
+    display: flex; 
+    float: right;    
+    width: 180px;
+    border-radius: 50%;
+    padding: 3px;
+    border: #ababab solid;
+    border-width: 1px;
+    margin: 0 20% 0 5%; 
+}
+
 main {
     width: 90%;
     border-style: solid;
@@ -21,13 +37,120 @@ main {
     border-width: 1px;
     padding-top: 5%;
     color: #959595;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     margin: 0 auto;
 }
 
+nav {
+    font-size: 1.3em;
+}
+.summary {
+    font-size: large ;
+}
+#resume {
+    text-decoration: none;
+    color: seagreen;
+}
+
+h2 {
+    margin: 150px 0 10px 0;
+    text-align: center;
+}
+#highlight {
+    margin: 10px 0 150px 0;
+    text-align: center;
+}
+.picture {
+  /*  width: 380px; */
+    height: 215px;
+}
+
+section {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-areas: "d2 d1"
+                         "a1  a2"
+                         "c2  c1";
+
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 350px 350px 350px;
+  }
+  
+  section > .massif {
+    grid-area: d2;
+  }
+  
+  section > .deere {
+    grid-area: d1;
+  }
+  
+  section > .opus {
+    grid-area: a2;
+  }
+  
+  section > .agco {
+    grid-area: a1;
+  }
+
+  section > .caseih {
+    grid-area: c2;
+  }
+  
+  section > .cnh {
+    grid-area: c1;
+  }
+
+    .massif {
+        display: flex;
+        justify-content: right;
+        padding-right: 20px;
+    }
+    .deere {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .opus {
+        display: flex;
+        justify-content: left;
+        padding-left: 20px;
+    }
+    .agco {
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .caseih {
+        display: flex;
+        justify-content: right;
+        padding-right: 20px;
+    }
+    .cnh {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .illinois {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+  
 footer {
+    display: grid;
     width: 90%;
     margin: 0 auto;
-    padding-top: 10%;
+    margin-top: 150px;
+    height: 100px;
+    grid-template-areas: "a b c d";
+    grid-auto-columns: 25% 25% 25% 25%;
+    
+    font-size: 16px;
+    text-align: center;
+}
+
+.icon {
+    height: 45px;
 }
