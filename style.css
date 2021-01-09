@@ -5,7 +5,7 @@ body {
 .container {
     width: 90%;
     color: #615e72;
-    /* border-style: solid; */
+    border-style: solid; 
     margin: 0 auto;
 }
 
@@ -21,6 +21,7 @@ h1 {
 
 header {
     display: flex;
+    align-items: center;
 }
 #bingcheng {    
     width: 180px;
@@ -33,9 +34,7 @@ header {
 
 main {
     width: 90%;
-    /* border-style: solid; */
-    /* border-color: #777777; */
-    /* border-width: 1px; */
+    border-style: solid;
     padding-top: 5%;
     color: #959595;
     font-size: 20px;
@@ -177,27 +176,163 @@ footer {
 @media (max-width: 600px) {
     body {
         background-color: powderblue;
-        /* display: block; */
     }
+    /*
+    .container {
+        width: 90%;
+        color: #615e72;
+        border-style: solid; 
+        margin: 0 auto;
+    }
+    */
+    h1 {
+        /* width: 90%; */
+        /* margin: 0 auto; */
+        /* padding: 10% 0 3% 0; */
+        /* text-align: center; */
+        font-size: 2em;
+        /* font-style: oblique; */
+        /* color: #808080; */
+    }
+    
     header {
-        font-size: 2.5em;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
     }
-    nav {
+    /*
+    #bingcheng {    
+        width: 180px;
+        border-radius: 50%;
+        padding: 3px;
+        border: #ababab solid;
+        border-width: 1px;
+        margin: 0 20% 0 5%; 
+    }
+    
+    main {
+        width: 90%;
+        border-style: solid;
+        padding-top: 5%;
+        color: #959595;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0 auto;
+    }
+    */
+    #nav {
+        /* color: black; */
+        font-size: 1.3em;
+        /* font-family: fantasy; */
+    }
+    .summary {
+        font-size: medium;
+        /* font-family: 'Courier New', Courier, monospace; */
+    }
+    #resume {
+        /* text-decoration: none; */
+        /* color: seagreen; */
+    }
+    
+    h2 {
+        margin-top: 100px;
+        /* text-align: center; */
+        /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    }
+    #highlight {
+        margin-bottom: 100px;
+        /* text-align: center; */
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    }
+    .picture {
+        display: flex;
+        justify-content: center;
+        padding: 0 0 0 0;
+        margin-bottom: 10px;
+        height: 120px;
+    }
+    h3 {
         font-size: 1em;
-    }
-    #bingcheng nav .summary {
-        display: block;
+        text-align: center;
     }
     section {
         /* display: grid; */
         /* width: 100%; */
         /* height: auto; */
-        grid-template-areas: "d2 d1"
-                             "a1  a2"
-                             "c2  c1";
+        grid-template-areas: "d2 d2" "d1 d1"
+                             "a2 a2" "a1 a1"
+                             "c2 c2" "c1 c1";
     
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 350px 350px 350px;
-        align-items: center;
+        /* grid-template-columns: 50% 50%; */
+        grid-template-rows: auto;
+        /* align-items: center; */
       }
+      /*
+        .massif {
+            display: flex;
+            justify-content: center;
+            padding-right: 0px;
+        } */
+        .deere {
+            text-align: left;
+            padding-left: 0px;
+        }
+    /*
+        .opus {
+            display: flex;
+            justify-content: center;
+            padding-left: 0px;
+        } */  
+        .agco {
+            text-align: left;
+            padding-right: 0px;
+        }
+    /*
+        .caseih {
+            display: flex;
+            justify-content: center;
+            padding-right: 0px;
+        } */
+        .cnh {
+            text-align: left;
+            padding-left: 0px;
+        }
+    
+        .prod {
+            font-size: medium;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 50px;
+        }
+        .illinois {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            position: relative; 
+        }
+        #grainger {
+            position: absolute;  
+            color:orange; 
+        }
+    
+    #uiuc {
+        width: 400px;
+    }    
+
+    footer {
+        /* display: grid; */
+        /* width: 90%; */
+        /* margin: 0 auto; */
+        margin-top: 100px;
+        /* height: 100px; */
+        grid-template-areas: "a" "b" "c" "d";
+        /* grid-auto-columns: 25% 25% 25% 25%; */
+        justify-content: center;
+        font-size: 14px;
+        /* text-align: center; */
+    }
+    
+    .icon {
+        height: 25px;
+    }
 }
