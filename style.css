@@ -233,7 +233,10 @@ footer {
         .prod {
             font-size: medium;
             font-family: 'Times New Roman', Times, serif;
-            margin-bottom: 50px;
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: gray solid;
+            border-width: 1px;
         }
         .illinois {
             display: flex;
